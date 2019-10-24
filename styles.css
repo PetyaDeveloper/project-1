@@ -107,7 +107,8 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card-contact{
-    margin: 25px auto 0;
+    margin: auto;
+    width: 80%;
 }
 .card:hover {
   border-color: #b3cccc;
@@ -144,15 +145,6 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-/*
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
-*/
-
 a.social:hover {
   opacity: 1;
 }
@@ -183,41 +175,6 @@ a.social:hover {
     transition: all 1s;
 }
 
-
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-
-  .flex {
-      display: -ms-flexbox;      
-      display: flex;
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
-  header {
-    min-height: 470px;
-  }
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
-  main {
-    padding-top: 20px;
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-}
-h3 {
-  text-align: center;
-}
 
 /*************
 EXPERIENCE
@@ -282,9 +239,44 @@ CONTACT
 .card-contact{
     margin-top: 40px;
     background: #ffffe6;
-    width: 35%;
 }
 
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+    .card-contact{
+       width: 35%;
+       height: 220px;
+    }
+    
+  .flex {
+      display: -ms-flexbox;      
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+  header {
+    min-height: 470px;
+  }
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
 
 
 
